@@ -12,7 +12,7 @@ public class Histo {
         String word2 = "cookies";
         String word3 = "Milk";
 
-        String[] data1 = {word1, word2, word3, "elephantishere", "Pseudopseudohypopaasdadafafas", "philidelphia"};
+        String[] data1 = {word1, word2, word3, "elephantishere", "Pseudopseudohadsas", "philidelphia"};
         int length1n = data1.length;
         int[] length1 = {data1.length};
         histogram(data1, length1);
@@ -25,7 +25,7 @@ public class Histo {
 
 
             int length1 = piece1.length();
-            int maxlength = 25;
+            int maxlength = 15;
 
 
             if (!(length1 > maxlength)) {
