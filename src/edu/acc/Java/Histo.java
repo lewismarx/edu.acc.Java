@@ -12,7 +12,7 @@ public class Histo {
         String word2 = "cookies";
         String word3 = "Milk";
 
-        String[] data1 = {word1, word2, word3, "elephantishere", "Pseudopseudohypoparath"};
+        String[] data1 = {word1, word2, word3, "elephantishere", "Pseudopseudohypopaasdadafafas", "philidelphia"};
         int length1n = data1.length;
         int[] length1 = {data1.length};
         histogram(data1, length1);
@@ -24,42 +24,47 @@ public class Histo {
         for (String piece1 : labels) {
 
 
-
-
-        int length1 = piece1.length();
+            int length1 = piece1.length();
             int maxlength = 25;
 
+
+            if (!(length1 > maxlength)) {
                 System.out.print(piece1.toLowerCase());
-
-            int endlength = (maxlength) - length1;
-            String spacelength = "";
-            while (endlength > 0) {
-                spacelength += " ";
-                endlength = endlength - 1;
-            }
-
-
-            String starslength = "";
-            String outputtext = "";
-
-            while (length1 > 0 && !(length1 > maxlength)) {
-
-                starslength += "*";
-                String text = spacelength.concat(starslength);
-                int stringlength = 0;
-                stringlength = starslength.length() + spacelength.length();
-                if (text.length() > maxlength) {
-                    outputtext = text.substring(0, maxlength);
+                int endlength = (maxlength) - length1;
+                String spacelength = "";
+                while (endlength > 0) {
+                    spacelength += " ";
+                    endlength = endlength - 1;
                 }
-                else{
-                    outputtext = text;
-                }
-                length1 = length1 - 1;
-            }
-            System.out.print(outputtext);
-            System.out.print("\n");
 
+
+                String starslength = "";
+                String outputtext = "";
+
+                while (length1 > 0 && !(length1 > maxlength)) {
+
+                    starslength += "*";
+                    String text = spacelength.concat(starslength);
+                    int stringlength = 0;
+                    stringlength = starslength.length() + spacelength.length();
+                    if (text.length() > maxlength) {
+                        outputtext = text.substring(0, maxlength);
+                    }
+                    else {
+                        outputtext = text;
+                    }
+                    length1 = length1 - 1;
+                }
+                System.out.print(outputtext);
+                System.out.print("\n");
+
+            }
+            else{
+                System.out.println("Word Length Bypasses Max Screen Length");
+
+            }
         }
+
     }
 
     @Override
@@ -76,6 +81,8 @@ take in input for labels string and integer stars
 validate input ( make sure user text is proper )
 give useful error message
 Start stars on same column, tested using "  *" for input string
+using a integer of max length and subtracting the number of letters of the word from it
+to determine space and star marks
 
 
 
