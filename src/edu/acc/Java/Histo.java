@@ -12,7 +12,7 @@ public class Histo {
         String word2 = "cookies";
         String word3 = "Milk";
 
-        String[] data1 = {word1, word2, word3, "elephantishere", "Pseudopseudohadsas", "philidelphia"};
+        String[] data1 = args;
         int length1n = data1.length;
         int[] length1 = {data1.length};
         histogram(data1, length1);
@@ -47,12 +47,10 @@ public class Histo {
                     String text = spacelength.concat(starslength);
                     int stringlength = 0;
                     stringlength = starslength.length() + spacelength.length();
-                    if (text.length() > maxlength) {
-                        outputtext = text.substring(0, maxlength);
-                    }
-                    else {
+
+
                         outputtext = text;
-                    }
+
                     length1 = length1 - 1;
                 }
                 System.out.print(outputtext);
