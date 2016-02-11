@@ -9,7 +9,7 @@ public class ConsonantChecker {
         }
 
 
-        boolean isConsonant(char input) {
+        public boolean isConsonant(char input) {
 
 
 

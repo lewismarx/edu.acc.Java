@@ -9,7 +9,7 @@ public class LetterCheckerTF {
         isLetter(input);
     }
 
-    boolean isLetter(char input) {
+    public boolean isLetter(char input) {
 
 
 
