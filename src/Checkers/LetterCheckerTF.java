@@ -1,4 +1,4 @@
-package edu.acc.Java;
+package Checkers;
 
 /**
  * Created by lewis on 2/10/16.
